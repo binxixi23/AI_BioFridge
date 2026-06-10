@@ -1,0 +1,29 @@
+================================================================================
+HARDWARE SPECIFICATION BLUEPRINT - AI_BIOFRIDGE PROJECT
+================================================================================
+
+[PART 1: MAIN SMART FAMILY REFRIGERATOR SPECIFICATIONS]
+--------------------------------------------------------------------------------
+* Central Processing Unit: NVIDIA Jetson Orin Nano (Edge AI Processing)
+* Operating System: Embedded Custom Linux (Ubuntu Core)
+* Sensor Cluster Inputs:
+    ├── HD Wide-Angle Camera (Sony IMX219) - Integrated behind upper door panel for rPPG
+    ├── E-Nose Array: 1x MQ-135 (Air Quality/Ammonia) + 1x MQ-4 (Methane/Ethylene)
+    └── Weight Array: 4x Strain-Gauge Load Cells (HX711 Interface) under internal shelves
+* Output Actuators:
+    ├── 21.5-inch Vertical Matte LCD Screen (HDMI Connection)
+    ├── I2S Audio Amplifier + Dual 5W Speakers (Voice Assistant output)
+    └── Addressable RGB LED Strip (Status indicator via GPIO)
+
+[PART 2: AUTONOMOUS MOBILE COOLING VEHICLE SPECIFICATIONS]
+--------------------------------------------------------------------------------
+* Central Processing Unit: Raspberry Pi 5 (8GB) with AI Hat extension
+* Power Delivery Sub-system:
+    └── 7-Meter Heavy-Duty Power Cable with Spring-Loaded Motorized Cable Reel
+* Mobility & Enclosure Base:
+    ├── Chassis: Low-profile AGV Steel frame with a low center of gravity
+    └── Drivetrain: 4x High-torque DC Servo Motors with independent hydraulic shocks
+* Navigation & Obstacle Avoidance:
+    ├── 1x 360-Degree LiDAR Sensor Module (RPILIDAR A1)
+    └── 4x Ultrasonic Distance Sensors (HC-SR04) mounted at all chassis corners
+* Refrigeration Unit: High-efficiency miniature 12V/24V cooling compressor
